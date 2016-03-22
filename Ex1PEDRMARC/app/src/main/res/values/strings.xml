@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Ex1PEDRMARC</string>
+    <string name="title_activity_setup">Setup</string>
+    <string name="OK">OK</string>
+    <string name="Set_the_marker">Set the marker on your current position</string>
+    <string name="Set_a_center">Set a center for the perimeter security holding the marker down and dropping it or…</string>
+    <string name="Latitude">Latitude:</string>
+    <string name="Longitude">Longitude:</string>
+    <string name="Set_the_perimeter">Set the perimeter security radius in meters</string>
+    <string name="Set_the_marker_manually">Set the marker manually</string>
+
+    <string name="title_activity_alarm">Alarm</string>
+    <string name="dummy_button">Turn off the alarm</string>
+    <string name="dummy_content">ALARM\n\nYOU ARE OUT THE PERIMETER SECURITY</string>
+</resources>

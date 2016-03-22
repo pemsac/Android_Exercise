@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.uc3m.pedro.Ex1PEDRMARC" >
+    //Permissions:
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    //App Manifest
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        //Google API Key
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBdlKpy_G-LXny2t0Y35O9XGOZ-lZfKvdQ" />
+        //Services:
+        //Activities:
+        <activity
+            android:name="com.uc3m.pedro.Ex1PEDRMARC.Welcome"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.uc3m.pedro.Ex1PEDRMARC.SetupActivity"
+            android:label="@string/title_activity_setup"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service
+            android:name="com.uc3m.pedro.Ex1PEDRMARC.ControlService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <activity
+            android:name="com.uc3m.pedro.Ex1PEDRMARC.AlarmActivity"
+            android:showOnLockScreen="true"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_alarm">
+           </activity>
+    </application>
+
+</manifest>
